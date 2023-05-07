@@ -228,6 +228,13 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- No TAB characters
+vim.o.expandtab = true
+
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
