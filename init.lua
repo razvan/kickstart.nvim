@@ -501,6 +501,11 @@ cmp.setup {
 }
 
 vim.keymap.set('n', '<leader>gg', ':Git<CR>', { desc = "Git status" })
+vim.keymap.set('n', '<leader>go', ':Gclog<CR>', { desc = "Git log" })
+vim.keymap.set('n', '<leader>gl', ':Git pull<CR>', { desc = "Git pull" })
+vim.keymap.set('n', '<leader>gp', ':Git push<CR>', { desc = "Git push" })
+
+vim.keymap.set('n', 'T', ':NvimTreeOpen<CR>', { desc = "NeoVim Tree" })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
